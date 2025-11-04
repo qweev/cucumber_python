@@ -9,39 +9,6 @@ Feature: data tables type story
 # @given(parsers.re(r'a system state with list:\n\s+"""(?P<items>.*?)\s+"""', flags=re.DOTALL), target_fixture="state")
 # def system_state_with_list(items):
 
-
-
-#Scenario: scenario with list
-#  Given a system state with list:
-#    """
-#    dog
-#    cat
-#    wolf
-#    """
-#  When I do something with list
-#  Then system is in a different state with list
-
-
-#  Scenario:  scenario with list in list
-#    Given a system state with list in list
-#    """
-#      | firstName   | lastName | birthDate  |
-#      | Annie M. G. | Schmidt  | 1911-03-20 |
-#      | Roald       | Dahl     | 1916-09-13 |
-#      | Astrid      | Lindgren | 1907-11-14 |
-#    """
-#    When I do something with list in list
-#    Then system is in a different state with list in list
-
-#  Scenario:  scenario with map
-#    Given a system state with map
-#      |cat|catty|
-#      |wolf|wolfy|
-#      |dog |doggy|
-#    When I do something with map
-#    Then system is in a different state with map
-#
-#
 #  Scenario:  scenario with list with map
 #    Given a system state with list map
 #      |name|surname|comment|anythig|
@@ -57,6 +24,7 @@ Feature: data tables type story
     Given the following users exist
       | username | password |
       | alice    | pass123  |
-      | bob      | secret   |
+      | bob      | mysecret |
+      | john     | tajne    |
     When they try to login
     Then all users should login successfully
